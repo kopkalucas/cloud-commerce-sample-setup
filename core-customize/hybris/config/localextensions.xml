@@ -98,7 +98,6 @@
 	  <extension name= 'sapproductconfigb2bservices' />
 	  <extension name= 'sapproductconfigfacades' />
 	  <extension name= 'sapproductconfigocc' />
-	  <extension name= 'sapproductconfigocctests' />
 	  <extension name= 'sapproductconfigrules' />
 	  <extension name= 'sapproductconfigrulesbackoffice' />
 	  <extension name= 'sapproductconfigruntimeinterface' />

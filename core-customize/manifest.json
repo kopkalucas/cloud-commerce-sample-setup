@@ -44,62 +44,6 @@
             ]
         }
     },
-    "storefrontAddons": [
-        {
-            "addons": [
-                "adaptivesearchsamplesaddon",
-                "assistedservicecustomerinterestsaddon",
-                "assistedservicepromotionaddon",
-                "assistedservicestorefront",
-                "assistedserviceyprofileaddon",
-                "captchaaddon",
-                "configurablebundleaddon",
-                "consignmenttrackingaddon",
-                "customercouponaddon",
-                "customercouponsamplesaddon",
-                "customerinterestsaddon",
-                "eventtrackingwsaddon",
-                "merchandisingaddon",
-                "merchandisingstorefrontsampledataaddon",
-                "multicountrysampledataaddon",
-                "notificationaddon",
-                "ordermanagementaddon",
-                "orderselfserviceaddon",
-                "pcmbackofficesamplesaddon",
-                "personalizationaddon",
-                "personalizationsampledataaddon",
-                "personalizationyprofilesampledataaddon",
-                "profiletagaddon",
-                "selectivecartsplitlistaddon",
-                "smarteditaddon",
-                "stocknotificationaddon",
-                "textfieldconfiguratortemplateaddon",
-                "timedaccesspromotionengineaddon",
-                "timedaccesspromotionenginesamplesaddon",
-                "xyformssamples",
-                "xyformsstorefrontcommons",
-                "ysapproductconfigaddon"
-            ],
-            "storefronts": [
-                "yacceleratorstorefront",
-                "yb2bacceleratorstorefront"
-            ],
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addons": [
-                "accountsummaryaddon",
-                "b2bacceleratoraddon",
-                "b2bpunchoutaddon",
-                "commerceorgaddon",
-                "commerceorgsamplesaddon",
-                "sapproductconfigb2baddon",
-                "secureportaladdon"
-            ],
-            "storefront": "yb2bacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        }
-    ],
     "properties": [
         {
             "key": "lang.packs",

@@ -1,0 +1,11 @@
+#Ant properties
+#Thu Nov 19 16:36:41 CET 2020
+version.api=2011
+vendor=hybris
+group.id=de.hybris.platform
+name=patchCXEC9506
+description=patchCXEC9506
+builddate=20201119 1630
+releasedate=20201119 1630
+version=2011.0
+module.name=platform-module

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved
+--><extensioninfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extensioninfo.xsd">
+    	
+    <extension abstractclassprefix="Generated" classprefix="PatchCXEC9506" name="patchCXEC9506" usemaven="false">
+        		
+        <requires-extension name="backoffice"/>
+        		
+        <!--PLACEHOLDER_FOR_SASS_REGISTRATION-->
+        		
+        <coremodule generated="true" manager="org.bo.patch.jalo.PatchCXEC9506Manager" packageroot="org.bo.patch"/>
+        		
+        <meta key="backoffice-module" value="true"/>
+        		
+	
+    </extension>
+    
+</extensioninfo>

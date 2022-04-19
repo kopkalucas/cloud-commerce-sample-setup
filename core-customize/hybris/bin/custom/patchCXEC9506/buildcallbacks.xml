@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved
+--><!--
+ All hybris buildcallbacks.xml macrodefinitions:
+
+ Build/Documentation
+
+	 before/after ant macro "clean"
+		 <macrodef name="patchCXEC9506_before_clean"/>
+		 <macrodef name="patchCXEC9506_after_clean"/>
+
+	 before/after ant macro "build"
+		 <macrodef name="patchCXEC9506_before_build"/>
+		 <macrodef name="patchCXEC9506_after_build"/>
+
+	 before/after ant macro "compile_core" - the core module of the extension
+		 <macrodef name="patchCXEC9506_before_compile_core">
+		 <macrodef name="patchCXEC9506_after_compile_core">
+
+	 before/after ant macro "compile_web" - the web module of the extension
+		 <macrodef name="patchCXEC9506_before_compile_web" />
+		 <macrodef name="patchCXEC9506_after_compile_web" />
+
+	 before/after ant macro "compile_hmc" - the hmc module of the extension
+		 <macrodef name="patchCXEC9506_before_compile_hmc" />
+		 <macrodef name="patchCXEC9506_after_compile_hmc" />
+
+ Preparing extension
+
+	 will be called in the beginning of the ant call and only once (also when using multiple
+	 ant targets e.g. ant build yunittest)
+		 <macrodef name="patchCXEC9506_only_once_prepare"/>
+
+ Creating ear module/production
+
+	 before/after ant macro "ear"
+		 <macrodef name="patchCXEC9506_before_ear"/>
+		 <macrodef name="patchCXEC9506_after_ear"/>
+
+	 before/after ant macro "production" - for hybris server only
+		 <macrodef name="patchCXEC9506_before_production" />
+		 <macrodef name="patchCXEC9506_after_production" />
+
+ JUnit Test
+
+	 before/after ant macro "yunitinit"
+		 <macrodef name="patchCXEC9506_before_yunitinit" />
+		 <macrodef name="patchCXEC9506_after_yunitinit" />
+
+	 before/after ant macro "yunit"
+		 <macrodef name="patchCXEC9506_before_yunit" />
+		 <macrodef name="patchCXEC9506_after_yunit" />
+
+ Distribution package
+
+ 	 before/after ant macro "dist" - internal target; only for use when platform is available in source code
+		 <macrodef name="patchCXEC9506_after_dist"/>
+		 <macrodef name="patchCXEC9506_before_dist"/>
+
+	 before/after ant macro "dist_copy" - internal target; only for use when platform is available in source code
+		 <macrodef name="patchCXEC9506_before_dist_copy"/>
+		 <macrodef name="patchCXEC9506_after_dist_copy"/>
+
+ 	 With these filters you can override the default extension filters defined in platform/resources/ant/dist/filtersets.xml
+ 	  	 <patternset id="extension.patchCXEC9506.binary.filter">
+ 	  	  	 <patternset refid="extension.filter" />
+ 	  	  	 <exclude name="**/*-source.jar" />
+ 	  	 </patternset>
+ 	  	 <patternset id="extension.patchCXEC9506.source.filter">
+ 	  	  	 <exclude name="**/bin/**" />
+ 	  	 </patternset>
+
+ Backoffice module
+
+ 	 before/after ant macro "backoffice" - internal target; only for use when extensin is a backoffice module
+		 <macrodef name="patchCXEC9506_before_clean_backoffice"/>
+		 <macrodef name="patchCXEC9506_after_clean_backoffice"/>
+		 <macrodef name="patchCXEC9506_before_compile_backoffice"/>
+		 <macrodef name="patchCXEC9506_after_compile_backoffice"/>
+
+--><project name="patchCXEC9506_buildcallbacks">
+    	
+    <property name="patchCXEC9506WebFragmentSrc" value="${ext.patchCXEC9506.path}/resources/web-fragment.xml"/>
+    	
+    <property name="patchCXEC9506WebFragmentDestJar" value="${ext.backoffice.path}/web/webroot/WEB-INF/lib/webfragmentExt_patchCXEC9506.jar"/>
+    	
+
+	
+
+	
+    <macrodef name="patchCXEC9506_after_clean">
+        		
+        <sequential>
+            			
+            <patchCXEC9506_remove_web_fragment/>
+            		
+        </sequential>
+        	
+    </macrodef>
+    	
+    <macrodef name="patchCXEC9506_after_build">
+        		
+        <sequential>
+            			
+            <patchCXEC9506_remove_web_fragment/>
+            			
+            <patchCXEC9506_create_web_fragment/>
+            		
+        </sequential>
+        	
+    </macrodef>
+    	
+    <macrodef name="patchCXEC9506_remove_web_fragment">
+        		
+        <sequential>
+            			
+            <if>
+                				
+                <available file="${patchCXEC9506WebFragmentDestJar}"/>
+                				
+                <then>
+                    					
+                    <delete file="${patchCXEC9506WebFragmentDestJar}"/>
+                    				
+                </then>
+                			
+            </if>
+            		
+        </sequential>
+        	
+    </macrodef>
+    	
+    <macrodef name="patchCXEC9506_create_web_fragment">
+        		
+        <sequential>
+            			
+            <if>
+                				
+                <available file="${patchCXEC9506WebFragmentSrc}"/>
+                				
+                <then>
+                    					
+                    <sequential>
+                        						
+                        <jar destfile="${patchCXEC9506WebFragmentDestJar}">
+                            							
+                            <metainf file="${patchCXEC9506WebFragmentSrc}"/>
+                            						
+                        </jar>
+                        					
+                    </sequential>
+                    				
+                </then>
+                			
+            </if>
+            		
+        </sequential>
+        	
+    </macrodef>
+    	
+    <patternset id="patchCXEC9506.localization.pattern">
+        		
+        <!-- core and hmc  -->
+        		
+        <include name="**/*locales*_en.properties"/>
+        		
+        <exclude name="**/hmc/web/webroot/WEB-INF/classes/**/*"/>
+        		
+        <exclude name="**/unittest/**/*"/>
+        		
+        <!-- cockpit (ng) -->
+        		
+        <include name="**/i3-label_en.properties"/>
+        		
+        <include name="**/labels_en.properties"/>
+        		
+        <!-- messages -->
+        		
+        <include name="**/*messages_en.properties"/>
+        		
+        <include name="**/*messages.properties"/>
+        		
+        <!-- frontend properties files in WEB-INF/messages folder -->
+        		
+        <include name="**/WEB-INF/messages/*_en.properties"/>
+        		
+        <!-- csv and impex -->
+        		
+        <include name="**/*_en.csv"/>
+        		
+        <include name="**/*_en.impex"/>
+        		
+        <include name="**/lang-en.properties"/>
+        		
+        <!-- email localizations from yacceleratorcore -->
+        		
+        <include name="resources/**/messages/*_en.properties"/>
+        		
+        <!-- include validation messages -->
+        		
+        <include name="resources/**/ValidationMessages.properties"/>
+        	
+    </patternset>
+    	
+    <macrodef name="patchCXEC9506_before_build">
+		<sequential>
+			<register_sass_extension extensionname="patchCXEC9506"/>
+			<register_sass_extension extensionname="patchCXEC9506" resources="resources" destination=""/>
+		</sequential>
+	</macrodef>
+    
+</project>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/testsrc" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="backoffice" />
+    <orderEntry type="module" module-name="cockpitcore" />
+    <orderEntry type="module" module-name="cockpitframework" />
+    <orderEntry type="module" module-name="platform" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/sac-1.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/zk-8.6.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/zel-8.6.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/zul-8.6.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/gson-2.8.8.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/zkex-8.6.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/zuti-8.6.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/zweb-8.6.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/zhtml-8.6.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/gmapsz-3.0.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/zkbind-8.6.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/zkplus-8.6.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/ckez-4.18.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/zcommon-8.6.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/atlantic-8.6.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/zkmax-8.6.3-SAP.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/zkcharts-7.2.2.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/jfreechart-1.0.14.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/zkspring-core-3.2.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/webfragmentCore_XSSFilter.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/cockpitcore-22.05.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/cockpitadmin-22.05.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/cockpittesting-22.05.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/cockpitwidgets-22.05.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/backoffice-core-22.05.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/cockpitframework-22.05.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/backoffice-widgets-22.05.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/webfragmentCore_requestContextFilter.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/cockpit-demo-widgets-22.05.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/webfragmentCore_backofficefilterchain.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/webfragmentCore_backofficeMobileFilter.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/webfragmentCore_backofficeRemoteTesting.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/webfragmentCore_characterEncodingFilter.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/cockpit-data-integration-22.05.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/cockpit-standard-editors-22.05.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/webfragmentCore_springSecurityFilterChain.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/cockpit-module-aggregator-22.05.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../../modules/backoffice/source/backoffice/web/webroot/WEB-INF/lib/webfragmentCore_backofficeMediaFilterChain.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

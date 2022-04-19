@@ -2,7 +2,6 @@
   <extensions>
     <path dir='${HYBRIS_BIN_DIR}' autoload='false' />
     <extension name='samlsinglesignon' />
-    <extension name="smartedittrail" />
     <extension name='addonsupport' />
     <extension name='basecommerce' />
     <extension name='basecommercebackoffice' />

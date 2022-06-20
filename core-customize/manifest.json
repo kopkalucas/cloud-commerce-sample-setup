@@ -1,119 +1,125 @@
 {
-  "aspects": [
-    {
-      "name": "backoffice",
-      "webapps": [
-        {
-          "contextPath": "/hac",
-          "name": "hac"
-        },
-        {
-          "contextPath": "/medias",
-          "name": "mediaweb"
-        },
-        {
-          "contextPath": "/backoffice",
-          "name": "backoffice"
-        },
-        {
-          "contextPath": "/authorizationserver",
-          "name": "oauth2"
-        },
-        {
-          "contextPath": "/smartedit",
-          "name": "smartedit"
-        },
-        {
-          "contextPath": "/cmssmartedit",
-          "name": "cmssmartedit"
-        },
-        {
-          "contextPath": "/cmssmarteditwebservices",
-          "name": "cmssmarteditwebservices"
-        },
-        {
-          "contextPath": "/smarteditwebservices",
-          "name": "smarteditwebservices"
-        },
-        {
-          "contextPath": "/cmswebservices",
-          "name": "cmswebservices"
-        },
-        {
-          "contextPath": "/permissionswebservices",
-          "name": "permissionswebservices"
-        },
-        {
-          "contextPath": "/previewwebservices",
-          "name": "previewwebservices"
-        },
-        {
-          "contextPath": "/odata2webservices",
-          "name": "odata2webservices"
-        }
-      ]
-    },
-    {
-      "name": "backgroundProcessing",
-      "properties": [],
-      "webapps": [
-        {
-          "contextPath": "/hac",
-          "name": "hac"
-        },
-        {
-          "contextPath": "/medias",
-          "name": "mediaweb"
-        }
-      ]
-    },
-    {
-      "name": "api",
-      "properties": [],
-      "webapps": [
-        {
-          "contextPath": "/occ",
-          "name": "commercewebservices"
-        },
-        {
-          "contextPath": "/odata2webservices",
-          "name": "odata2webservices"
-        },
-        {
-          "contextPath": "/acceleratorservices",
-          "name": "acceleratorservices"
-        },
-        {
-          "contextPath": "/authorizationserver",
-          "name": "oauth2"
-        },
-        {
-          "contextPath": "/medias",
-          "name": "mediaweb"
-        }
-      ]
-    }
-  ],
-  "commerceSuiteVersion": "2105.8",
-  "extensionPacks": [
-    {
-      "name": "hybris-commerce-integrations",
-      "version": "2108.2"
-    }
-  ],
-  "extensions": [
-    "modeltacceleratorservices"
-  ],
-  "properties": [],
-  "useCloudExtensionPack": false,
-  "useConfig": {
-    "extensions": {
-      "exclude": [
-        "azurecloudhotfolder",
-        "cloudcommons",
-        "cloudhotfolder"
-      ],
-      "location": "hybris/config/localextensions.xml"
-    },
-  }
+   "aspects":[
+      {
+         "name":"backoffice",
+         "webapps":[
+            {
+               "contextPath":"/hac",
+               "name":"hac"
+            },
+            {
+               "contextPath":"/medias",
+               "name":"mediaweb"
+            },
+            {
+               "contextPath":"/backoffice",
+               "name":"backoffice"
+            },
+            {
+               "contextPath":"/authorizationserver",
+               "name":"oauth2"
+            },
+            {
+               "contextPath":"/smartedit",
+               "name":"smartedit"
+            },
+            {
+               "contextPath":"/cmssmartedit",
+               "name":"cmssmartedit"
+            },
+            {
+               "contextPath":"/cmssmarteditwebservices",
+               "name":"cmssmarteditwebservices"
+            },
+            {
+               "contextPath":"/smarteditwebservices",
+               "name":"smarteditwebservices"
+            },
+            {
+               "contextPath":"/cmswebservices",
+               "name":"cmswebservices"
+            },
+            {
+               "contextPath":"/permissionswebservices",
+               "name":"permissionswebservices"
+            },
+            {
+               "contextPath":"/previewwebservices",
+               "name":"previewwebservices"
+            },
+            {
+               "contextPath":"/odata2webservices",
+               "name":"odata2webservices"
+            }
+         ]
+      },
+      {
+         "name":"backgroundProcessing",
+         "properties":[
+            
+         ],
+         "webapps":[
+            {
+               "contextPath":"/hac",
+               "name":"hac"
+            },
+            {
+               "contextPath":"/medias",
+               "name":"mediaweb"
+            }
+         ]
+      },
+      {
+         "name":"api",
+         "properties":[
+            
+         ],
+         "webapps":[
+            {
+               "contextPath":"/occ",
+               "name":"commercewebservices"
+            },
+            {
+               "contextPath":"/odata2webservices",
+               "name":"odata2webservices"
+            },
+            {
+               "contextPath":"/acceleratorservices",
+               "name":"acceleratorservices"
+            },
+            {
+               "contextPath":"/authorizationserver",
+               "name":"oauth2"
+            },
+            {
+               "contextPath":"/medias",
+               "name":"mediaweb"
+            }
+         ]
+      }
+   ],
+   "commerceSuiteVersion":"2105.8",
+   "extensionPacks":[
+      {
+         "name":"hybris-commerce-integrations",
+         "version":"2108.2"
+      }
+   ],
+   "extensions":[
+      "modeltacceleratorservices"
+   ],
+   "properties":[
+      
+   ],
+   "useCloudExtensionPack":false,
+   "useConfig":{
+      "extensions":{
+         "exclude":[
+            "azurecloudhotfolder",
+            "cloudcommons",
+            "cloudhotfolder"
+         ],
+         "location":"hybris/config/localextensions.xml"
+      }
+   }
 }

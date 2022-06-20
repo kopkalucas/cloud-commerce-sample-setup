@@ -1,5 +1,5 @@
 {
-  "commerceSuiteVersion" : "2011.7",
+  "commerceSuiteVersion" : "2105.8",
   "aspects" : [ {
     "name" : "backoffice",
     "webapps" : [ {
